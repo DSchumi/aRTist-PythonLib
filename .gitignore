@@ -1,3 +1,14 @@
 __pycache__
 artistlib.egg-info
 dist
+/venv/
+/.venv/
+*.tif
+/workspace/
+*.raw
+*.stl
+*.json
+*.aRTist
+*.ply
+/build/
+/examples/

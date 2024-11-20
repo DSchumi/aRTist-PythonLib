@@ -1,0 +1,29 @@
+[project]
+name = "artist-pythonlib"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "swittl", email = "simon.wittl@th-deg.de" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.9.2",
+    "numpy>=2.1.3",
+    "pillow>=11.0.0",
+    "scipy>=1.14.1",
+    "thd-json>=0.1.0",
+    "xraydb>=4.5.4",
+]
+
+[project.optional-dependencies]
+thd = [
+    "thd-json",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+thd-json = { git = "https://mygit.th-deg.de/roboct/definitions/json_schemas" }
